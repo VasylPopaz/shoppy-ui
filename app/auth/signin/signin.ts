@@ -6,10 +6,11 @@ import { jwtDecode } from "jwt-decode";
 
 import { getErrorMessage } from "@/app/common/util/errors";
 import { API_URL } from "@/app/common/constants/api";
-import { FormError } from "@/app/common/interfaces/form-error.interface";
-import { AUTHENTICATION_COOKIE } from "../auth-cookie";
 
-export const signin = async (_prevState: FormError, formData: FormData) => {
+import { AUTHENTICATION_COOKIE } from "../auth-cookie";
+import { FormResponse } from "@/app/common/interfaces/form-response.interface";
+
+export const signin = async (_prevState: FormResponse, formData: FormData) => {
   const res = await fetch(`${API_URL}/auth/login`, {
     method: "POST",
     headers: {
