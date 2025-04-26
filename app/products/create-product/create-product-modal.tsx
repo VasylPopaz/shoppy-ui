@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { Box, Button, Modal, Stack, TextField } from "@mui/material";
 
-import { FormResponse } from "../common/interfaces/form-response.interface";
-import { createProduct } from "./create-product";
+import { createProduct } from "../actions/create-product";
+import { FormResponse } from "@/app/common/interfaces/form-response.interface";
 
 const styles = {
   position: "absolute",
