@@ -1,7 +1,13 @@
-import { CreateProductFab } from "./products/create-product-fab";
+import { CreateProductFab } from "./products/create-product/create-product-fab";
+import { Products } from "./products/products";
 
 const Home = async () => {
-  return <CreateProductFab />;
+  return (
+    <>
+      <Products />
+      <CreateProductFab />
+    </>
+  );
 };
 
 export default Home;
