@@ -40,7 +40,7 @@ const RootLayout = async ({
           {" "}
           <CssBaseline />
           <Header logout={logout} />
-          <Container>{children}</Container>
+          <Container className="py-10">{children}</Container>
         </Providers>
       </body>
     </html>
