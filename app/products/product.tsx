@@ -1,4 +1,5 @@
 import { Card, Typography } from "@mui/material";
+
 import { Product as IProduct } from "./interfaces/product.interface";
 
 interface ProductProps {
