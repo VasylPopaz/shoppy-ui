@@ -1,6 +1,8 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 
+import { Checkout } from "@/app/checkout/checkout";
+
 import { getProduct } from "./get-product";
 import { getProductImage } from "../product-image";
 
@@ -33,6 +35,7 @@ const SingleProduct = async ({ params }: SingleProductProps) => {
 
           <Typography>{product.description}</Typography>
           <Typography variant="h4">${product.price}</Typography>
+          <Checkout productId={product.id} />
         </Stack>
       </Grid>
     </Grid>
