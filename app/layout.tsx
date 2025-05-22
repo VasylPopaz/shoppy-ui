@@ -5,7 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "./header/header";
 import { Providers } from "./providers";
 
-import { authenticated } from "./auth/authenticated";
+import { authenticated } from "./auth/actions/authenticated";
 import { logout } from "./auth/logout";
 import "./globals.css";
 
